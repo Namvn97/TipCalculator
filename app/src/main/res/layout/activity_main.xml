@@ -1,9 +1,169 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
     tools:context="com.example.namp5.tipcalculator.MainActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_result"
+        style="@style/result_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_gravity="end"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/text_inputnumber"
+        style="@style/result_style"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_80"
+        android:layout_gravity="end"
+        android:hint="0"
+        android:maxLines="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_ac"
+                style="@style/number_button_style"
+                android:text="@string/text_ac" />
+
+            <TextView
+                android:id="@+id/text_plus_subtraction"
+                style="@style/number_button_style"
+                android:text="@string/text_plus_subtraction" />
+
+            <TextView
+                android:id="@+id/text_division_100"
+                style="@style/number_button_style"
+                android:text="@string/text_div100" />
+
+            <TextView
+                android:id="@+id/text_division"
+                style="@style/action_button_style"
+                android:text="@string/text_division" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number7"
+                style="@style/number_button_style"
+                android:text="@string/text_seven" />
+
+            <TextView
+                android:id="@+id/text_number8"
+                style="@style/number_button_style"
+                android:text="@string/text_eight" />
+
+            <TextView
+                android:id="@+id/text_number9"
+                style="@style/number_button_style"
+                android:text="@string/text_nine" />
+
+            <TextView
+                android:id="@+id/text_multiplication"
+                style="@style/action_button_style"
+                android:text="@string/text_multiplication" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number4"
+                style="@style/number_button_style"
+                android:text="@string/text_four" />
+
+            <TextView
+                android:id="@+id/text_number5"
+                style="@style/number_button_style"
+                android:text="@string/text_five" />
+
+            <TextView
+                android:id="@+id/text_number6"
+                style="@style/number_button_style"
+                android:text="@string/text_six" />
+
+            <TextView
+                android:id="@+id/text_subtraction"
+                style="@style/action_button_style"
+                android:text="@string/text_subtraction" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number1"
+                style="@style/number_button_style"
+                android:text="@string/text_one" />
+
+            <TextView
+                android:id="@+id/text_number2"
+                style="@style/number_button_style"
+                android:text="@string/text_two" />
+
+            <TextView
+                android:id="@+id/text_number3"
+                style="@style/number_button_style"
+                android:text="@string/text_three" />
+
+            <TextView
+                android:id="@+id/text_plus"
+                style="@style/action_button_style"
+                android:text="@string/text_plus" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_number0"
+                style="@style/number_button_style"
+                android:layout_weight="2"
+                android:text="@string/text_zero"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/text_dot"
+                style="@style/number_button_style"
+                android:layout_weight="1"
+                android:text="@string/text_dot" />
+
+            <TextView
+                android:id="@+id/text_equals"
+                style="@style/action_button_style"
+                android:layout_weight="1"
+                android:text="@string/text_equals" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</android.support.v7.widget.LinearLayoutCompat>
